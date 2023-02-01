@@ -1,32 +1,29 @@
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {Route,Routes,Link,BrowserRouter} from "react-router-dom";
+import Home from './components/pages/Home'
+import Contact from './components/pages/Contact'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import Container from './components/layout/Container'
 
 function App() {
   return (
-    <Router>
-      <ul>
-        <li>Home</li>
-        <li>Contato</li>
-      </ul>
-      <Switch>
-          <Router exact path="/">
-            <Home />
-          </Router>
-
-          <Router exact path="/company">
-            <Company />
-          </Router>
-
-          <Router exact path="/contact">
-            <Contact />
-          </Router>
-
-          <Router exact path="/newproject">
-            <NewProject />
-          </Router>
-      </Switch>
-    
-    </Router>
-
+    <BrowserRouter>
+      <div>
+        <Link to='/'>Home</Link>
+        <Link to='/contact'>Contato</Link>
+        <Link to='/company'>Empresa</Link>
+        <Link to='/newproject'>Novo Projeto</Link>
+      </div>
+      <Container customClass='minHeight'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/company' element={<Company />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route exact path='/newproject' element={<NewProject />} />
+        </Routes>
+      </Container>
+      <p>Footer</p>
+    </BrowserRouter>
   );
 }
 
