@@ -1,25 +1,66 @@
 {
-  "projects" : [],
+  "projects": [
+    {
+      "name": "Wilian",
+      "budget": "123",
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Wilian Batista dos Santos",
+      "budget": "20000",
+      "category": {
+        "id": "5",
+        "name": "Produção"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "sistema",
+      "budget": "49998",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Wilian",
+      "budget": "1211",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    }
+  ],
   "categories": [
-      {
-          "id": 1,
-          "name": "infra"
-      },
-      {
-          "id": 2,
-          "name": "Desenvolvimento"
-      },
-      {
-          "id": 3,
-          "name": "Design"
-      },
-      {
-          "id": 4,
-          "name": "Planejamento"
-      },
-      {
-          "id": 5,
-          "name": "Produção"
-      }
+    {
+      "id": 1,
+      "name": "infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    },
+    {
+      "id": 5,
+      "name": "Produção"
+    }
   ]
 }
