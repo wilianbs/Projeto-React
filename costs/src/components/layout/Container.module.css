@@ -7,13 +7,13 @@
 }
 
 .min-height {
-    min-height: 75vh;
-    
+    min-height: 75vh;    
 }
-.start
-{
+
+.start {
     justify-content: flex-start;
 }
+
 .column {
     flex-direction: column;
     justify-content: flex-start;
