@@ -6,12 +6,12 @@ import SubmitButton from '../form/SubmitButton'
 import styles from './ProjectForm.module.css'
 
 function ProjectForm ({handleSubmit, btnText, projectData}) {
-    const [categories, setCategories] = useState([])
+    const [category, setCategories] = useState([])
     const [project, setProject] = useState(projectData || {})
 
    useEffect(() => {
      
-        fetch('http://localhost:5000/categories', {
+        fetch('http://localhost:5000/category', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json',
@@ -66,7 +66,7 @@ function ProjectForm ({handleSubmit, btnText, projectData}) {
             <Select 
             name="category_id" 
             text="Selecione a Categoria"
-            options={categories} 
+            options={category} 
             handleOnChange={handleCategory}
             value={project.category ? project.category.id : ''} />
 

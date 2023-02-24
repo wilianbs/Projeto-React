@@ -1,15 +1,19 @@
 {
   "projects": [
     {
-      "name": "Wilian",
-      "budget": "123",
+      "name": "projeto 1",
+      "budget": "4500",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "Wilian Batista dos Santos",
-      "budget": "20000",
+      "name": "projeto 2",
+      "budget": "19998",
       "category": {
         "id": "5",
         "name": "Produção"
@@ -19,65 +23,32 @@
       "id": 2
     },
     {
-      "name": "sistema",
-      "budget": "49998",
+      "name": "projeto 3",
+      "budget": "49999",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 3
     },
     {
-      "name": "Wilian",
-      "budget": "1211",
+      "name": "iniciar teste",
+      "budget": "30599",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 4
-    },
-    {
-      "name": "projeto 2",
-      "budget": "20000",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "projeto 2",
-      "budget": "30000",
-      "category": {
-        "id": "5",
-        "name": "Produção"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "projeto 3",
-      "budget": "34445",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
     }
   ],
-  "categories": [
+  "category": [
     {
       "id": 1,
-      "name": "infra"
+      "name": "Infra"
     },
     {
       "id": 2,
