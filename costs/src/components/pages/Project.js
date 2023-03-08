@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 
 import styles from './Project.module.css'
 
@@ -101,8 +101,34 @@ function Project() {
         .catch(err => console.log (err))
     }
 
-    function handleRemove() {
+    function removeService(id, cost) {
         
+        const servicesUpdated = project.services.filter(
+            (service) => service.id !== id
+        )
+
+        const projectUpdated = project
+
+        projectUpdated.services = servicesUpdated
+        projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+
+        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(projectUpdated),
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setProject(projectUpdated)
+            setServices (servicesUpdated)
+            setMessage('Serviço removido com sucesso!')
+            setType('success')
+
+        })
+        .catch(err => console.log (err))
+
     }
 
     function toggleProjectForm () {
@@ -169,8 +195,8 @@ function Project() {
                                     name={service.name}
                                     cost={service.cost}
                                     description={service.description}
-                                    key={service.key}
-                                    handleRemove={handleRemove}
+                                    key={service.id}
+                                    handleRemove={removeService}
                                 />
                             ))
                         }

@@ -1,69 +1,22 @@
 {
   "projects": [
     {
-      "name": "projeto 1",
-      "budget": "4500",
+      "name": "projeto 2",
+      "budget": "5000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 2699,
+      "cost": 100,
       "services": [
         {
-          "name": "novo serviço",
-          "cost": "1000",
+          "name": "projeto 1",
+          "cost": "100",
           "description": "fazer alguma algo.",
-          "id": "22856a06-20bb-4a65-8ea3-dc34a90d2d56"
-        },
-        {
-          "name": "novo serviço 2",
-          "cost": "499",
-          "description": "algun serviço",
-          "id": "209a26f0-3795-46e0-af81-4e0d86a1d94b"
-        },
-        {
-          "name": "atualizar dados",
-          "cost": "1200",
-          "description": "atualizar bamco de dados",
-          "id": "aaaff6a2-6c79-4da9-86e3-968d4b507a9f"
+          "id": "1a5b895f-374a-441c-9418-7f8207d4b518"
         }
       ],
       "id": 1
-    },
-    {
-      "name": "projeto 3",
-      "budget": "8000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 2399,
-      "services": [
-        {
-          "name": "novo serviço 4",
-          "cost": "1199",
-          "description": "fazer alguma algo.",
-          "id": "358c1730-db07-454d-bd2f-c4c099c53477"
-        },
-        {
-          "name": "novo serviço 6",
-          "cost": "1200",
-          "description": "fazer alguma algo.",
-          "id": "64a41a19-a3c2-4540-afbe-645928c6ae03"
-        }
-      ],
-      "id": 2
-    },
-    {
-      "name": "Wilian Batista dos Santos",
-      "budget": "25300",
-      "category": {
-        "id": "5",
-        "name": "Produção"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
     }
   ],
   "category": [
