@@ -17,6 +17,72 @@
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Pagina Web",
+      "budget": "2600",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1500,
+      "services": [
+        {
+          "name": "front end",
+          "cost": "300",
+          "description": "Criar paginas de navegação",
+          "id": "911472c1-bbc9-4ac2-b371-991c9c4eaa28"
+        },
+        {
+          "name": "Back end",
+          "cost": "400",
+          "description": "Criar sistema backend",
+          "id": "278baceb-b171-430c-9877-f61c04b5e840"
+        },
+        {
+          "name": "web designer",
+          "cost": "500",
+          "description": "Leyout da pagina web",
+          "id": "6d3763c2-5cf4-41dc-acb7-c0ab109bfebf"
+        },
+        {
+          "name": "servidor",
+          "cost": "200",
+          "description": "contratar servidor",
+          "id": "19bbf229-85f2-4d90-bb9a-8065574f90ce"
+        },
+        {
+          "name": "dominio",
+          "cost": "100",
+          "description": "contratar donimio",
+          "id": "1d690cb5-4e88-4bb6-882a-a1d2d8c444c5"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Manutenção do sistema",
+      "budget": "3000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 1000,
+      "services": [
+        {
+          "name": "manter o sistema on",
+          "cost": "600",
+          "description": "manutenção no servidor",
+          "id": "ed1791be-6750-4cb9-b7c5-49e2e8cd264c"
+        },
+        {
+          "name": "operação",
+          "cost": "400",
+          "description": "operar servidor",
+          "id": "ee20fda3-7948-46b8-8857-10566ccfe31c"
+        }
+      ],
+      "id": 3
     }
   ],
   "category": [
